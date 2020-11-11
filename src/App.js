@@ -1,13 +1,13 @@
-import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import React from "react";
+import { Route, Switch } from "react-router-dom";
 
 // Pages
-import Home from './pages/HomePage/Home';
-import About from './pages/AboutPage/About';
-import Skills from './pages/SkillsPage/Skills';
-import MyWorks from './pages/MyWorksPage/MyWorks';
-import Blog from './pages/BlogPage/Blog';
-import Contact from './pages/ContactPage/Contact';
+import Home from "./pages/HomePage/Home";
+import About from "./pages/AboutPage/About";
+import Skills from "./pages/SkillsPage/Skills";
+import MyWorks from "./pages/MyWorksPage/MyWorks";
+import Blog from "./pages/BlogPage/Blog";
+import Contact from "./pages/ContactPage/Contact";
 
 const App = () => {
   return (
