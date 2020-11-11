@@ -1,0 +1,68 @@
+// UI color palattes
+$dark-bg: #272727;
+$dark-bg2: #1a1a1d;
+$light-bg: #747474;
+$yellow: #ffe400;
+$blue: #4ad7d1;
+$pink: #f30550;
+
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+.skills-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(250, 250, 250, 0.9);
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-text {
+    direction: rtl;
+    text-align: justify;
+    font-family: 'IRANYekan', 'Poppins';
+
+    h3 {
+        margin-bottom: 20px;
+    }
+
+    h3 span {
+        color: $blue;
+        transition: ease-out 0.3s;
+    }
+
+    h3 span:hover {
+        color: $pink;
+        transition: ease-out 0.3s;
+    }
+
+    p {
+        line-height: 1.8em;
+    }
+}
+
+// Mobile View
+@media (max-width: 768px) {
+    .skills-view {
+        height: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .skills-text {
+        margin-top: 3em;
+    }
+
+    .skills-text p {
+        padding: 0.3em;
+    }
+
+    .bars-list {
+        padding: 0;
+    }
+}

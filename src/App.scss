@@ -1,0 +1,41 @@
+// Bootstrap 
+@import "./../node_modules/bootstrap/scss/bootstrap";
+
+.col-3-mob-close {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: ease-in 0.5s;
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .row {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 992px) {
+    .col-3-mob-close {
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 0;
+        transition: ease-in 0.5s;
+        height: 100%;
+    }
+
+    .col-3-mob-open {
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        transition: ease-in 0.5s;
+        height: 100%;
+        width: 100%;
+        z-index: 9;
+    }
+}

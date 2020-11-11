@@ -1,0 +1,148 @@
+// Hamburger Menu Icon
+@import './../../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
+
+// UI color palattes
+$dark-bg: #272727;
+$dark-bg2: #1a1a1d;
+$light-bg: #747474;
+$yellow: #ffe400;
+$blue: #4ad7d1;
+$pink: #f30550;
+
+// Fonts
+@font-face {
+  font-family: IRANYekan;
+  src: url('./../../assets/fonts/IRANYekan.ttf');
+}
+
+.navParent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  // height: 100vh;
+}
+
+.imgContainer {
+  display: none;
+  justify-content: center;
+  padding: 10px;
+
+  .logoImg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.btnView {
+  display: none;
+}
+
+.pagesContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: $dark-bg;
+  justify-content: space-around;
+}
+
+.cardView {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+}
+
+.cardContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+}
+
+.card_face_front {
+  width: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_face_back {
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.card_face_back {
+  transform: rotateY(180deg);
+  font-family: IRANYekan;
+  color: #fff;
+}
+
+.cardView:hover .cardContainer {
+  transform: rotateY(180deg);
+}
+
+.menuIcon {
+  font-size: 30px;
+  color: $pink;
+}
+
+.socialContainer {
+  background-color: $dark-bg;
+  border-top: 1px solid $light-bg;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.socialIcon {
+  color: $yellow;
+}
+
+// Mobile View
+@media (max-width: 768px) {
+  .navParent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .socialContainer {
+    overflow: hidden;
+  }
+
+  .btnView {
+    display: inline;
+    position: relative;
+
+    .butn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transition: all ease-in 1.5s;
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    .butn.open {
+      // left: -50%;
+      margin-right: 100%;
+      transition: all ease-in 0.2s;
+    }
+  }
+}

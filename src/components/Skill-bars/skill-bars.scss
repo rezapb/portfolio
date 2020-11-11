@@ -1,0 +1,34 @@
+// UI color palattes
+$dark-bg: #272727;
+$dark-bg2: #1a1a1d;
+$light-bg: #747474;
+$yellow: #ffe400;
+$blue: #4ad7d1;
+$pink: #f30550;
+
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+.bars-list {
+    list-style: none;
+
+    .bars {
+        margin: 5px;
+        background-color: #E0E0E0;
+    }
+
+    .bars-p {
+        padding: 0px 15px;
+        font-family: 'Poppins', sans-serif;
+        background: rgb(2, 128, 122);
+        background: linear-gradient(270deg, rgba(2, 128, 122, 1) 0%, rgba(0, 131, 126, 1) 35%, rgba(74, 215, 209, 1) 100%);
+        // background: linear-gradient(270deg, rgba(0, 96, 58, 1) 0%, rgba(0, 176, 107, 1) 35%, rgba(7, 250, 155, 1) 100%);
+    }
+
+    .bars-name {}
+
+    .bars-perc {
+        float: right;
+        color: #fff;
+    }
+}

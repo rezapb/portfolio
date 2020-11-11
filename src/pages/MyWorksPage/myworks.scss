@@ -1,0 +1,32 @@
+// UI color palattes
+$dark-bg: #272727;
+$dark-bg2: #1a1a1d;
+$light-bg: #747474;
+$yellow: #ffe400;
+$blue: #4ad7d1;
+$pink: #f30550;
+
+// Image Gallery
+@import './../../../node_modules/react-image-gallery/styles/scss/image-gallery.scss';
+
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+.myworks-view {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(250, 250, 250, 0.9);
+}
+
+.work-title {
+  text-align: center;
+
+  h3 {
+    font-size: 1.5em;
+    font-family: 'IRANYekan', 'Poppins';
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: $dark-bg;
+    text-shadow: 6px 5px 6px #4AD7D1;
+  }
+}
